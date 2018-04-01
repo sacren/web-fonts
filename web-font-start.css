@@ -1,3 +1,21 @@
+/* Import customized fonts */
+
+@font-face {
+  font-family: 'aleoregular';
+  src: url('customized/aleo-regular-webfont.woff2') format('woff2'),
+       url('customized/aleo-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '20_dbregular';
+  src: url('customized/20db-webfont.woff2') format('woff2'),
+       url('customized/20db-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* General setup */
 
 html {
@@ -14,6 +32,10 @@ body {
 
 /* Typography */
 
+h1, h2 {
+  font-family: '20_dbregular';
+}
+
 h1 {
   font-size: 3.2rem;
 }
@@ -26,4 +48,5 @@ p {
   font-size: 1.4rem;
   line-height: 1.6;
   word-spacing: 0.6rem;
+  font-family: aleoregular;
 }
